@@ -7,7 +7,7 @@ import {
     FETCH_FEATURE
 } from './types';
 
-const ROOT_URL = 'http://localhost:3090';
+const ROOT_URL = 'http://18.234.255.253:3090';
 
 export const signinUser = ({ email, password }) => {
     return (dispatch) => {

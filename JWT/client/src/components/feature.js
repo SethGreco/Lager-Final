@@ -113,7 +113,7 @@ class ComponentToPrint extends React.Component {
       this.getData()
     };
     getData() {
-      fetch('http://127.0.0.1:8000/api/project')
+      fetch('http://18.234.255.253/api/project')
         .then(response => response.json())
 
         .then(data => {
@@ -134,7 +134,7 @@ class ComponentToPrint extends React.Component {
           <ComponentToPrint data={this.state.data} ref={el => (this.componentRef = el)} />
           &nbsp;&nbsp;&nbsp;
 
-          <Form onSumbitClick={this.handleFormSubmit} endpoint={'127.0.0.1:8000/api/project/'}/>
+          <Form onSumbitClick={this.handleFormSubmit} endpoint={'18.234.255.253/api/project/'}/>
 
         </div>
       );
